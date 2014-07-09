@@ -1,0 +1,11 @@
+<service name="Test2Service">
+	<description>AxisService</description>
+	<parameter name="ServiceClass">com.sohu.scx.ws.Test2Ws</parameter>
+	<operation name="showName">
+		<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+	</operation>
+	<operation name="getName">
+		<messageReceiver
+			class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" />
+	</operation>
+</service>
